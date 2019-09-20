@@ -1,0 +1,19 @@
+bash script to set aws ec2 metadata as environment variables:
+------------------------------------------------------------------
+
+
+chmod 755 metadata.sh
+source metadata.sh
+
+ubuntu@ip-10-0-1-130 ~]$ env | grep REGION
+REGION=us-east-1
+[ubuntu@ip-10-0-1-130 ~]$ env | grep PUBLIC_IP
+PUBLIC_IP=34.207.54.221
+[ubuntu@ip-10-0-1-130 ~]$ env | grep PRIVATE_IP
+PRIVATE_IP=10.0.1.130
+[ubuntu@ip-10-0-1-130 ~]$ env | grep AVAILABILTY_ZONE
+[ubuntu@ip-10-0-1-130 ~]$ env | grep AVAILABILITY_ZONE
+AVAILABILITY_ZONE=us-east-1a
+[ubuntu@ip-10-0-1-130 ~]$
+
+
